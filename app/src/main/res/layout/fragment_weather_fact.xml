@@ -1,0 +1,157 @@
+<com.google.android.material.card.MaterialCardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:backgroundTint="#F2FAF2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/weather_fact_conteiner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:padding="10dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="Скорсть ветра"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/wind_speed"
+            tools:text="20 м/с"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="Скорость порывов ветра"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/wind_speed"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/wind_gast"
+            tools:text="20 м/с"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/wind_speed"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="Направление ветра"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/wind_gast"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/wind_dir"
+            tools:text="северозапад"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/wind_gast"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:text="Давление (в мм рт. ст.)"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/wind_dir"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/pressure_mm"
+            tools:text="20mm"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/wind_dir"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:text="Давление (в гектопаскалях)"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/pressure_mm"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/pressure_pa"
+            tools:text="20mm"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/pressure_mm"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:text="Влажность воздуха"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/pressure_pa"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/humidity"
+            tools:text="50%"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/pressure_pa"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:text="время суток"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/humidity"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/daytime"
+            tools:text="день"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/humidity"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+
+            android:text="время года"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/daytime"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/season"
+            tools:text="лето"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/daytime"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
